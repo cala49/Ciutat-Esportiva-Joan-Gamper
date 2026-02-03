@@ -26,6 +26,25 @@ class Event: # def events, name, time and resources
             "end": self.end.isoformat(),
             "resources_ids": [r.index for r in self.resources]  # Solo guardamos los IDs de los recursos
         }
+        
+    @classmethod
+    def from_dict(cls, data: dict, recursos_por_id: dict) -> "Event":
+        try:
+            return cls(
+                id_event=data["id"],
+                name=data["name"],
+                start=datetime.fromisoformat(data["start"]),  # Convierte str a datetime
+                end=datetime.fromisoformat(data["end"]),
+                resources=[recursos_por_id[r_id] for r_id in data["resources_ids"]]
+            )
+        except KeyError as e:
+            print(f"❌ Falta campo obligatorio en evento: {e}")
+            raise
+        except ValueError as e:
+            print(f"❌ Formato de fecha inválido: {e}")
+            raise
+        
+        
     def superposition(self, eventOther):
         # verificar si se superponen eventos
         return (self.start < eventOther.end and self.end > eventOther.start)

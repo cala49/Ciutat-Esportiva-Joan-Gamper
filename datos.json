@@ -1,0 +1,76 @@
+{
+  "recursos": [
+    {
+      "type": "Sports Equipment",
+      "index": 1,
+      "name": "Balón de Fútbol 1",
+      "inStack": 5,
+      "brand": "Nike",
+      "subtype": "Ball"
+    },
+    {
+      "type": "Sports Equipment",
+      "index": 2,
+      "name": "Balón de Fútbol 2",
+      "inStack": 3,
+      "brand": "Adidas",
+      "subtype": "Ball"
+    },
+    {
+      "type": "Sports Equipment",
+      "index": 3,
+      "name": "Kit de Entrenamiento",
+      "inStack": 2,
+      "color": "Rojo",
+      "subtype": "Kit"
+    },
+    {
+      "type": "Sports Equipment",
+      "index": 4,
+      "name": "Amarillas",
+      "inStack": 10,
+      "subtype": "Cards"
+    },
+    {
+      "type": "Sports Equipment",
+      "index": 5,
+      "name": "Rojas",
+      "inStack": 5,
+      "subtype": "Cards"
+    },
+    {
+      "type": "Sports Equipment",
+      "index": 6,
+      "name": "Espinilleras",
+      "inStack": 8,
+      "subtype": "Supplements"
+    },
+    {
+      "type": "Sports Equipment",
+      "index": 7,
+      "name": "Bebida Energética",
+      "inStack": 15,
+      "subtype": "Supplements"
+    }
+  ],
+  "calendario": {
+    "last_id": 1,
+    "events": [
+      {
+        "id": 1,
+        "name": "Partido vs Mayorca",
+        "start": "2026-04-05T15:00:00",
+        "end": "2026-04-05T16:45:00",
+        "resources_ids": [
+          1,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  "fecha_guardado": "2026-02-03T04:39:31.290049",
+  "version": "1.0"
+}

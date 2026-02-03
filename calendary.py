@@ -1,4 +1,3 @@
-# calendar.py
 from datetime import datetime, timedelta
 from typing import List, Optional
 from event import Event

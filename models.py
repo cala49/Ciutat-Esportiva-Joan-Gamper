@@ -1,4 +1,4 @@
-# resources.py
+
 class Resource:
     def __init__(self, type: str, index: int, name: str, inStack: int):        
         self.type = type
@@ -23,6 +23,8 @@ class Resource:
             "name": self.name,
             "inStack": self.inStack
         }
+    
+        
 
 
 class Ball(Resource):
